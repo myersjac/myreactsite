@@ -1,27 +1,28 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+const ScrollReveal = require('scrollreveal');
 
 class App extends Component {
+
   render() {
     return (
-      <div className="App">
+      <div>
         <header className="App-header">
           <img src={logo} className="App-logo" alt="logo" />
+
+          <h1 class="text1">
+            JAKE MYERS
+          </h1>
+
+          <h2>
+            HI Internet! I'm currently building my site so here's a spinner that will stop once my site is done.
+          </h2>
+
           <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          <button className="square">
-            {/* TODO */}
-          </button>
+            Thanks to jake rothman for helping choose my domain name! he's gr8!!
+        </p>
+
         </header>
       </div>
     );

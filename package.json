@@ -6,7 +6,8 @@
     "gh-pages": "^2.0.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
-    "react-scripts": "2.1.8"
+    "react-scripts": "2.1.8",
+    "scrollreveal": "^4.0.5"
   },
   "homepage": "https://Jakemyers.dev",
   "scripts": {
@@ -14,7 +15,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deploy":"npm run build && gh-pages -d build"
+    "stop": "killall -9 node",
+    "predeploy": "npm run build",
+    "deploy": "cp CNAME ./build && gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
