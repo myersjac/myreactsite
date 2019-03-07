@@ -19,6 +19,9 @@ class App extends Component {
           >
             Learn React
           </a>
+          <button className="square">
+            {/* TODO */}
+          </button>
         </header>
       </div>
     );
