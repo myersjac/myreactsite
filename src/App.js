@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import logo from './JM_LOGO_Vanilla.svg';
 import './App.css';
 const ScrollReveal = require('scrollreveal');
 
@@ -15,9 +15,9 @@ class App extends Component {
             JAKE MYERS
           </h1>
 
-          <h2>
-            HI Internet! I'm currently building my site so here's a spinner that will stop once my site is done.
-          </h2>
+          <h3>
+            HI Internet! I'm currently building my site so here's a spinner that will stop once it's done.
+          </h3>
 
           <p>
             Thanks to jake rothman for helping choose my domain name! he's gr8!!
