@@ -20,7 +20,7 @@ class App extends Component {
           </h3>
 
           <p>
-            Thanks to jake rothman for helping choose my domain name! he's gr8!!
+            Thanks to jake rothman for helping choose my domain name! he's gr8!!!!
         </p>
 
         </header>
