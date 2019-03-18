@@ -4,8 +4,10 @@
   "private": true,
   "dependencies": {
     "gh-pages": "^2.0.1",
+    "jquery": "^3.3.1",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
+    "react-ga": "^2.5.7",
     "react-scripts": "2.1.8",
     "scrollreveal": "^4.0.5"
   },
