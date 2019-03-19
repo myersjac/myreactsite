@@ -51,11 +51,7 @@ class Contact extends Component {
 
       event.preventDefault();
       console.log(this.state);
-      // using SendGrid's v3 Node.js Library
-      // https://github.com/sendgrid/sendgrid-nodejs
-      // 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
-      // sgMail.setApiKey(process.env.SENDGRID_API_KEY);
-      // sgMail.setApiKey("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");
+
       const msg = {
          to: "jacobmyers922@gmail.com",
          from: this.state.email,
@@ -64,7 +60,12 @@ class Contact extends Component {
          html: '<strong>and easy to do anywhere, even with Node.js!</strong>',
       };
 
-      emailjs.send("default_service", "contactme", msg, "user_jv6GwFGMxfrpuH2eoDCrH").then(function (response) {
+
+      var service_id = "default_service";
+      // var template_id = "template_rtgo442n"; //contactme
+      var template_id = "contactme"; //contactme
+
+      emailjs.send(service_id, template_id, msg, "user_jv6GwFGMxfrpuH2eoDCrH").then(function (response) {
          console.log('SUCCESS!', response.status, response.text);
          alert("Email Sent!");
          document.getElementById("contactForm").reset();
