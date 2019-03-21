@@ -17,7 +17,7 @@
       "zip": "(Your Zip/Postal Code)"
     },
     "website": "https://jakemyers.dev",
-    "resumedownload":"http://timbakerdev.com",
+    "resumedownload":"/images/resume.pdf",
     "social":[
       {
         "name":"facebook",
@@ -64,15 +64,23 @@
     "work":[
       {
         "company":"TD Ameritrade",
-        "title":"Senior UX God ",
-        "years":"March 2010 - Present",
+        "title":"Software Engineer",
+        "years":"May 2018 - Present",
         "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
       },
       {
         "company":"StockX",
-        "title":"Junior bug fixer",
-        "years":"March 2007 - February 2010",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "title":"Software Engineering & Product Management Intern",
+        "years":"Summer 2017",
+        "description":"Designed code base foundation to scale order processing system capabilities, increasing daily order capacity from by 400% to accommodate future growth",
+        "description2":"Analyzed finite state machine to implement order pickup option, streamlining processes and reducing redundancies within current states"
+      },
+      {
+        "company":"Tamarack Camps",
+        "title":"Camp Counselors",
+        "years":"Summers 2013 - 2016",
+        "description":"Designed code base foundation to scale order processing system capabilities, increasing daily order capacity from by 400% to accommodate future growth",
+        "description2":"Analyzed finite state machine to implement order pickup option, streamlining processes and reducing redundancies within current states"
       }
     ],
     "skills":[
@@ -109,10 +117,10 @@
   "portfolio":{
     "projects": [
       {
-        "title":"Canadian Wanderlust",
+        "title":"Triple E Professional Learning Network",
         "category":"My Travel Blog for my post-university travels",
-        "image":"canadian-wanderlust.jpg",
-        "url":"https://www.canadianwanderlust.com"
+        "image":"tripleE.jpg",
+        "url":"http://tripleepln.org"
       },
       {
         "title":"Fury Fighting Gear",

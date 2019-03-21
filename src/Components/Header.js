@@ -15,6 +15,8 @@ class Header extends Component {
       })
     }
 
+    let styles = {"visibility": "hidden"};
+
     return (
       <header id="home">
 
@@ -23,7 +25,10 @@ class Header extends Component {
          <a className="mobile-btn" href="#nav-wrap" title="Show navigation">Show navigation</a>
 	      <a className="mobile-btn" href="#home" title="Hide navigation">Hide navigation</a>
 
+         <img src="images/JMlogo.png" id="JMheaderlogo"></img> 
+
          <ul id="nav" className="nav">
+            <li></li>
             <li className="current"><a className="smoothscroll" href="#home">Home</a></li>
             <li><a className="smoothscroll" href="#about">About</a></li>
 	         <li><a className="smoothscroll" href="#resume">Resume</a></li>

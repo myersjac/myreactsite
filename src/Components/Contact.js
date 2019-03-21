@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 import * as emailjs from 'emailjs-com';
 
 
-const sgMail = require('@sendgrid/mail');
-
 class Contact extends Component {
 
 
