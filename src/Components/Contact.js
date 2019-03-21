@@ -58,7 +58,6 @@ class Contact extends Component {
          html: '<strong>and easy to do anywhere, even with Node.js!</strong>',
       };
 
-
       var service_id = "default_service";
       // var template_id = "template_rtgo442n"; //contactme
       var template_id = "contactme"; //contactme
@@ -77,6 +76,7 @@ class Contact extends Component {
       return false;
    }
 
+   
    render() {
 
       if (this.props.data) {

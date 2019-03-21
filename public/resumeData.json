@@ -77,7 +77,7 @@
       },
       {
         "company":"Tamarack Camps",
-        "title":"Camp Counselors",
+        "title":"Camp Counselor",
         "years":"Summers 2013 - 2016",
         "description":"Designed code base foundation to scale order processing system capabilities, increasing daily order capacity from by 400% to accommodate future growth",
         "description2":"Analyzed finite state machine to implement order pickup option, streamlining processes and reducing redundancies within current states"
@@ -86,31 +86,38 @@
     "skills":[
       {
         "name":"Git",
-        "level":"60%"
+        "level":"60%",
+        "image":"Git.png"
       },
       {
         "name":"Illustrator",
-        "level":"55%"
+        "level":"55%",
+        "image":"illustrator.png"
       },
       {
         "name":"ReactJs",
-        "level":"50%"
+        "level":"50%",
+        "image":"reactjs.png"
       },
       {
         "name":"CSS",
-        "level":"90%"
+        "level":"90%",
+        "image":"css.png"
       },
       {
         "name":"HTML5",
-        "level":"80%"
+        "level":"80%",
+        "image":"Git.png"
       },
       {
         "name":"VueJs",
-        "level":"50%"
+        "level":"50%",
+        "image":"Git.png"
       },
       {
         "name":"MongoDB",
-        "level":"80%"
+        "level":"80%",
+        "image":"Git.png"
       }
     ]
   },

@@ -36,7 +36,7 @@ body { background: #0f0f0f; }
       left: 15px;
       top: 15px;
       visibility: visible;
-      max-height: 75px;
+      max-height: 50px;
 
    }
    
@@ -46,8 +46,8 @@ body { background: #0f0f0f; }
    #JMheaderlogo {
       position: absolute;
       z-index: 99;
-      left: 15px;
-      top: 15px;
+      left: 5px;
+      top: 5px;
       visibility: hidden;
    }
  }
@@ -351,6 +351,16 @@ ul#nav li.current a { color: #a11751; }
    line-height: 42px;
    border-radius: 3px 0 0 3px;
 }
+
+img.skill{
+   max-width: 65% !important;
+ }
+
+ h5.skilltitle{
+   max-width: 65% !important;
+   text-align: center !important;
+ }
+ 
 /*
 .git {
   	-moz-animation: git 2s ease;
