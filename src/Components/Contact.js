@@ -17,6 +17,7 @@ class Contact extends Component {
       };
       this.handleChange = this.handleChange.bind(this);
       this.handleSubmit = this.handleSubmit.bind(this);
+      this.isEnabled = false;
    }
 
    defaultstate = {
@@ -47,9 +48,18 @@ class Contact extends Component {
 
    handleSubmit(event) {
 
+      
       event.preventDefault();
       console.log(this.state);
 
+       var goodtosend = ((this.state.email.length > 0) && (this.state.subject.length > 0) && (this.state.message.length > 0))
+
+       if(!goodtosend) {
+         alert("Please follow the requested email format!");
+         return;
+
+
+       }
       const msg = {
          to: "jacobmyers922@gmail.com",
          from: this.state.email,
@@ -68,15 +78,17 @@ class Contact extends Component {
          document.getElementById("contactForm").reset();
       }, function (error) {
          console.log('FAILED...', error);
-         alert("Email Not Sent!");
+         alert("Email Not Sent! Looks to be an external problem.");
 
          return false;
       });
 
       return false;
+
+
    }
 
-   
+
    render() {
 
       if (this.props.data) {
@@ -117,28 +129,28 @@ class Contact extends Component {
 
                         <div>
                            <label htmlFor="contactName">Name <span className="required">*</span></label>
-                           <input value={this.state.value} type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={(e) => {
+                           <input pattern=".{3,}" value={this.state.value} type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={(e) => {
                               this.handleChange(e, "name");
                            }} />
                         </div>
 
                         <div>
                            <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                           <input value={this.state.value} type="text" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={(e) => {
+                           <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={this.state.value} type="email" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={(e) => {
                               this.handleChange(e, "email");
                            }} />
                         </div>
 
                         <div>
                            <label htmlFor="contactSubject">Subject</label>
-                           <input value={this.state.value} type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={(e) => {
+                           <input pattern=".{3,}" value={this.state.value} type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={(e) => {
                               this.handleChange(e, "subject");
                            }} />
                         </div>
 
                         <div>
                            <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                           <textarea value={this.state.value} cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={(e) => {
+                           <textarea pattern=".{3,}" value={this.state.value} cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={(e) => {
                               this.handleChange(e, "message");
                            }}></textarea>
                         </div>
