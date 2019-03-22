@@ -37,7 +37,7 @@ class Resume extends Component {
         </div>
       })
     }
-
+    
   return(
       <section id = "resume" >
 
