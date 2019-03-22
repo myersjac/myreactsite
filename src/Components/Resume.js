@@ -3,7 +3,6 @@ import React, { Component } from 'react';
 class Resume extends Component {
   render() {
 
-
     if (this.props.data) {
       var skillmessage = this.props.data.skillmessage;
       var education = this.props.data.education.map(function (education) {
@@ -28,17 +27,16 @@ class Resume extends Component {
       //   return <li key={skills.name}><span style={{ width: skills.level }} className={className}></span><em>{skills.name}</em></li>
       // })
 
+
         var skills = this.props.data.skills.map(function (skills) {
         var projectImage = 'images/tech/' + skills.image;
-        return <div key={skills.name} className="columns feature-item">
+        return <div key={skills.name} className="columns feature-item skilldiv">
           <img className='skill' alt={skills.name} src={projectImage} />
           <h5 className='skilltitle'>{skills.name}</h5>
           <p>{skills.description}</p>
         </div>
       })
     }
-
-
 
   return(
       <section id = "resume" >
@@ -56,7 +54,6 @@ class Resume extends Component {
           </div>
         </div>
       </div>
-
 
       <div className="row work">
 
@@ -80,7 +77,7 @@ class Resume extends Component {
 
         <div>
           <div className="nine columns main-col"><p className="lead center">{skillmessage}</p></div>
-          <ul className="bgrid-quarters s-bgrid-thirds cf">
+          <ul id="skillicons" className="bgrid-quarters s-bgrid-thirds cf">
             {skills}
           </ul>
         </div>

@@ -85,9 +85,7 @@ class Contact extends Component {
 
       return false;
 
-
    }
-
 
    render() {
 

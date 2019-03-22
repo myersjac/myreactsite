@@ -52,7 +52,7 @@
     ]
   },
   "resume":{
-    "skillmessage":"Here you can create a short write-up of your skills to show off to employers",
+    "skillmessage":"Here's a scrollable list of technologies I've enjoyed working with!",
     "education":[
       {
         "school":"University of Michigan",
@@ -85,9 +85,33 @@
     ],
     "skills":[
       {
+        "name":"React",
+        "image":"reactjs.png"
+      },
+      {
+        "name":"Angular",
+        "image":"angular.png"
+      },
+      {
+        "name":"CSS",
+        "image":"css.png"
+      },
+      {
+        "name":"HTML5",
+        "image":"html5.png"
+      },
+      
+      {
+        "name":"NodeJS",
+        "image":"nodejs.png"
+      },
+      {
         "name":"Git",
-        "level":"60%",
         "image":"Git.png"
+      },
+      {
+        "name":"Photoshop",
+        "image":"photoshop.png"
       },
       {
         "name":"Illustrator",
@@ -95,30 +119,19 @@
         "image":"illustrator.png"
       },
       {
-        "name":"ReactJs",
-        "level":"50%",
-        "image":"reactjs.png"
+        "name":"Traktor",
+        "image":"traktor.png"
+      },
+      {
+        "name":"Angular",
+        "image":"angular.png"
       },
       {
         "name":"CSS",
-        "level":"90%",
         "image":"css.png"
-      },
-      {
-        "name":"HTML5",
-        "level":"80%",
-        "image":"Git.png"
-      },
-      {
-        "name":"VueJs",
-        "level":"50%",
-        "image":"Git.png"
-      },
-      {
-        "name":"MongoDB",
-        "level":"80%",
-        "image":"Git.png"
       }
+      
+      
     ]
   },
   "portfolio":{
