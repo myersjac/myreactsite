@@ -417,6 +417,19 @@ h5.skilltitle {
    box-shadow: 3px 3px 8px whitesmoke;
 }
 
+/* ALICE CAROUSEL */
+
+.carouselpic{
+   height: 150px;
+   margin: auto;
+   display: block;
+}
+
+.alice-carousel{
+   background-color: white;
+   margin: auto;
+}
+
 /*
 .git {
   	-moz-animation: git 2s ease;
