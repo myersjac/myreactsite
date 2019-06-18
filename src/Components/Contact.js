@@ -20,13 +20,6 @@ class Contact extends Component {
       this.isEnabled = false;
    }
 
-   defaultstate = {
-      name: '',
-      email: '',
-      subject: '',
-      message: ''
-   };
-
    handleChange(event, string) {
       switch (string) {
          case "name":
@@ -81,6 +74,13 @@ class Contact extends Component {
          alert("Email Not Sent! Looks to be an external problem.");
 
          return false;
+      });
+
+      this.setState({
+         name: '',
+         email: '',
+         subject: '',
+         message: ''
       });
 
       return false;
