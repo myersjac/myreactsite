@@ -307,7 +307,7 @@ ul#nav li.current a {
 /* ------------------------------------------------------------------ */
 
 #resume {
-   background: #fff;
+   background: #e2e2e2;
    padding-top: 90px;
    padding-bottom: 72px;
    overflow: hidden;
@@ -524,7 +524,7 @@ h5.skilltitle {
 /* ------------------------------------------------------------------ */
 
 #portfolio {
-   background: #ebeeee;
+   background:white;
    padding-top: 90px;
    padding-bottom: 60px;
 }
@@ -605,7 +605,8 @@ h5.skilltitle {
 }
 
 .portfolio-item .portfolio-item-meta {
-   padding: 18px
+   padding: 18px;
+
 }
 
 .portfolio-item .portfolio-item-meta h5 {
@@ -618,6 +619,10 @@ h5.skilltitle {
    color: #c6c7c7;
    margin-bottom: 0;
 }
+/* #portfolio-wrapper .columns { 
+   max-width: 200px;
+   max-height: 200px;
+} */
 
 /* on hover */
 

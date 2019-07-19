@@ -7,7 +7,7 @@
     "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
     "image":"profilepic.jpg",
     "bio":"Use  this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
-    "contactmessage":"Here is where you should write your message to readers to have them get in contact with you.",
+    "contactmessage":"If you'd like to get in touch with me, feel free to email me at my address listed below. Or just use this form!",
     "email": "jacobmyers922@gmail.com",
     "phone": "248-990-3794",
     "address":{
@@ -106,6 +106,10 @@
         "image":"nodejs.png"
       },
       {
+        "name":"Swift",
+        "image": "swift.png"
+      },
+      {
         "name":"Git",
         "image":"Git.png"
       },
@@ -135,37 +139,31 @@
     ]
   },
   "portfolio":{
-    "projects": [
+    "projects": [ 
       {
         "title":"Triple E Professional Learning Network",
-        "category":"My Travel Blog for my post-university travels",
+        "category":"Website built in Angular during my senior year at Michigan as apart of a directed study with multiple professors",
         "image":"tripleE.jpg",
         "url":"http://tripleepln.org"
       },
       {
-        "title":"Fury Fighting Gear",
-        "category":"(offline now) A fighting gear company I started",
-        "image":"fury-fighting-gear.jpg",
-        "url":"http://www.timbakerdev.com"
+        "title":"TD Ameritrdae Network Radio",
+        "category":"helped develop the TDAN Radio app, which allows iOS users to stream TDAN directly to their phone with full Apple Carplay functionality",
+        "image":"TDANRadio.jpg",
+        "url":"https://apps.apple.com/us/app/tdan-radio/id1460722200"
       },
       {
-        "title":"Original Thai Food",
-        "category":"Website I built for a restaurant I like in Thailand",
-        "image":"original-thai-food.jpg",
-        "url":"http://www.timbakerdev.com/originalthaifood.github.io"
+        "title":"TD Ameritrdae Network Video",
+        "category":"helped develop the TDAN Video app, which allows iOS users to stream TDAN directly to their phone",
+        "image":"TDANVideo.jpg",
+        "url":"https://apps.apple.com/us/app/tda-network/id1460719185"
       },
       {
-        "title":"Resume Website",
-        "category":"A React based resume website template",
-        "image":"resume-website.jpg",
-        "url":"http://www.timbakerdev.com"
-      },
-      {
-        "title":"Smirkspace",
-        "category":"(MVP Only) A React and Meteor based chat University project.",
-        "image":"smirkspace.jpg",
-        "url":"http://www.smirkspace.com"
-      }
+        "title":"STUMPY",
+        "category":"Worked on TD Ameritrade's open source python library STUMPY, helping develop the algorithm through research & implementation.",
+        "image":"stumpy.png",
+        "url":"https://github.com/TDAmeritrade/stumpy"
+      } 
     ]
   },
   "testimonials":{
