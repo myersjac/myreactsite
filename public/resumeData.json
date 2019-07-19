@@ -4,9 +4,9 @@
     "occupation":"Software Engineer",
     "occupation2":"DJ",
     "occupation3":"Graphic Designer",
-    "description":"Here will be your description. Use this to describe what you do or whatever you feel best describes yourself to a potential employer",
+    "description":"I love to explore new technologies and strive to be a difference maker in every situation i'm in",
     "image":"profilepic.jpg",
-    "bio":"Use  this bio section as your way of describing yourself and saying what you do, what technologies you like to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing in.",
+    "bio":"I was raised in Huntington Woods, Michigan, and have been working with computers ever since my parents brought home a computer running Windows XP. Since then a lot has changed (I prefer a unix-based OS), and my passion for computers and technology has only grown stronger. Being a self taught DJ and Graphic Designer, combined with graduating college with a degree in computer science has really provided me with a vast set of skills. And I aim to use those skills each and every day to try and make an impact in the world.",
     "contactmessage":"If you'd like to get in touch with me, feel free to email me at my address listed below. Or just use this form!",
     "email": "jacobmyers922@gmail.com",
     "phone": "248-990-3794",
@@ -20,24 +20,14 @@
     "resumedownload":"/images/resume.pdf",
     "social":[
       {
-        "name":"facebook",
-        "url":"http://facebook.com/tim.baker.906",
-        "className":"fa fa-facebook"
-      },
-      {
-        "name":"twitter",
-        "url":"http://twitter.com",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"linkedin",
         "url":"https://www.linkedin.com/in/jake-myers-4269a8a8/",
         "className":"fa fa-linkedin"
       },
       {
-        "name":"instagram",
-        "url":"http://instagram.com/tbaker_x",
-        "className":"fa fa-instagram"
+        "name":"twitter",
+        "url":"http://twitter.com/djmymys",
+        "className":"fa fa-twitter"
       },
       {
         "name":"github",
@@ -45,9 +35,9 @@
         "className":"fa fa-github"
       },
       {
-        "name":"skype",
-        "url":"http://skype.com",
-        "className":"fa fa-skype"
+        "name":"soundcloud",
+        "url":"https://soundcloud.com/djmymys",
+        "className":"fa fa-music"
       }
     ]
   },
