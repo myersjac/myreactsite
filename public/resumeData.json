@@ -159,12 +159,12 @@
   "testimonials":{
     "testimonials":[
       {
-        "text":"Here you should write some nice things that someone has said about you. No lies though, employers can tell when you are lying.",
-        "user":"Kareem Abdul Jabbar"
-      },
-      {
         "text":"Having Jake on the team is a very positive experience. He has a lot of energy and cares a lot about the quality of his work as well as a desire for his work to be meaningful.",
         "user":"Chris Melnick, Manager of TD Ameritrade's Exploration Lab"
+      },
+      {
+        "text":"Jake has always been innovative. At the age 3 of he merged two quotes, \"No Problem\" and \"My Pleasure\", to become \"No Pleasure\".",
+        "user":"Lisa Myers, Mom"
       }
     ]
   }
