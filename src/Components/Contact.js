@@ -157,7 +157,7 @@ class Contact extends Component {
                         <div>
                            {/* <button onSubmit={this.handleSubmit} className="submit">Submit</button> */}
                            <input type="submit" value="Submit" />
-                           <span id="image-loader">
+                           <span id="image-loader">  
                               <img alt="" src="images/loader.gif" />
                            </span>
                         </div>
@@ -183,7 +183,6 @@ class Contact extends Component {
                         {/* <span>{phone}</span> */}
                      </p>
                   </div>
-
 
                   {/* <div className="widget widget_tweets">
                      <h4 className="widget-title">Latest Tweets</h4>
