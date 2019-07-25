@@ -25,11 +25,6 @@
         "className":"fa fa-linkedin"
       },
       {
-        "name":"twitter",
-        "url":"http://twitter.com/djmymys",
-        "className":"fa fa-twitter"
-      },
-      {
         "name":"github",
         "url":"https://github.com/myersjac",
         "className":"fa fa-github"
@@ -46,9 +41,9 @@
     "education":[
       {
         "school":"University of Michigan",
-        "degree":"BSE, Computer Science in Egnineering",
+        "degree":"BSE, Computer Science in Engineering",
         "graduated":"April 2018",
-        "description":"Describe your experience at school, what you learned, what useful skills you have acquired etc."
+        "description":""
       }
     ],
     "work":[
@@ -56,7 +51,10 @@
         "company":"TD Ameritrade",
         "title":"Software Engineer",
         "years":"May 2018 - Present",
-        "description":"Describe work, special projects, notable achievements, what technologies you have been working with, and anything else that would be useful for an employer to know."
+        "description":"Led development of Google API for integration of consumer brokerage services portal with Google Assistant, increasing accessibility and functionality of product",
+        "description2":"Collaborated with 2-person team in development of 2 applications, a video livestream and media player and one with CarPlay functionality, with focus on applications’ UX/UI, allowing consumers to access TD Ameritrade Network on mobile devices",
+        "description3": "Created content management system for company’s internal blog site, improving platform and functionality while maintaining existing content",
+        "description4": "Presented to company’s business leaders on importance of recommendation engines and how such engines could be implemented with business processes and frameworks"
       },
       {
         "company":"StockX",
