@@ -1,0 +1,169 @@
+{
+  "main": {
+    "name":"Jake Myers",
+    "occupation":"Software Engineer",
+    "occupation2":"DJ",
+    "occupation3":"Graphic Designer",
+    "description":"I love to explore new technologies and strive to be a difference maker in every situation i'm in",
+    "image":"profilepic.jpg",
+    "bio":"I was raised in Huntington Woods, Michigan, and have been working with computers ever since my parents brought home a computer running Windows XP. Since then a lot has changed (I prefer a unix-based OS), and my passion for computers and technology has only grown stronger. Being a self taught DJ and Graphic Designer, combined with graduating college with a degree in computer science has really provided me with a vast set of skills. And I aim to use those skills each and every day to try and make an impact in the world.",
+    "contactmessage":"If you'd like to get in touch with me, feel free to email me at my address listed below. Or just use this form!",
+    "email": "jacobmyers922@gmail.com",
+    "phone": "248-990-3794",
+    "address":{
+      "street":"(Your Street)",
+      "city":"Ann Arbor",
+      "state":"Michigan",
+      "zip": "(Your Zip/Postal Code)"
+    },
+    "website": "https://jakemyers.dev",
+    "resumedownload":"/images/resume.pdf",
+    "social":[
+      {
+        "name":"linkedin",
+        "url":"https://www.linkedin.com/in/jake-myers-4269a8a8/",
+        "className":"fa fa-linkedin"
+      },
+      {
+        "name":"github",
+        "url":"https://github.com/myersjac",
+        "className":"fa fa-github"
+      },
+      {
+        "name":"soundcloud",
+        "url":"https://soundcloud.com/djmymys",
+        "className":"fa fa-music"
+      }
+    ]
+  },
+  "resume":{
+    "skillmessage":"Here's a scrollable list of technologies I've enjoyed working with!",
+    "education":[
+      {
+        "school":"University of Michigan",
+        "degree":"BSE, Computer Science in Engineering",
+        "graduated":"April 2018",
+        "description":""
+      }
+    ],
+    "work":[
+      {
+        "company":"TD Ameritrade",
+        "title":"Software Engineer",
+        "years":"May 2018 - Present",
+        "description":"Led development of Google API for integration of consumer brokerage services portal with Google Assistant, increasing accessibility and functionality of product",
+        "description2":"Collaborated with 2-person team in development of 2 applications, a video livestream and media player and one with CarPlay functionality, with focus on applications’ UX/UI, allowing consumers to access TD Ameritrade Network on mobile devices",
+        "description3": "Created content management system for company’s internal blog site, improving platform and functionality while maintaining existing content",
+        "description4": "Presented to company’s business leaders on importance of recommendation engines and how such engines could be implemented with business processes and frameworks"
+      },
+      {
+        "company":"StockX",
+        "title":"Software Engineering & Product Management Intern",
+        "years":"Summer 2017",
+        "description":"Designed code base foundation to scale order processing system capabilities, increasing daily order capacity from by 400% to accommodate future growth",
+        "description2":"Analyzed finite state machine to implement order pickup option, streamlining processes and reducing redundancies within current states"
+      },
+      {
+        "company":"Tamarack Camps",
+        "title":"Camp Counselor",
+        "years":"Summers 2013 - 2016",
+        "description":"Designed code base foundation to scale order processing system capabilities, increasing daily order capacity from by 400% to accommodate future growth",
+        "description2":"Analyzed finite state machine to implement order pickup option, streamlining processes and reducing redundancies within current states"
+      }
+    ],
+    "skills":[
+      {
+        "name":"React",
+        "image":"reactjs.png"
+      },
+      {
+        "name":"Angular",
+        "image":"angular.png"
+      },
+      {
+        "name":"CSS",
+        "image":"css.png"
+      },
+      {
+        "name":"HTML5",
+        "image":"html5.png"
+      },
+      
+      {
+        "name":"NodeJS",
+        "image":"nodejs.png"
+      },
+      {
+        "name":"Swift",
+        "image": "swift.png"
+      },
+      {
+        "name":"Git",
+        "image":"Git.png"
+      },
+      {
+        "name":"Photoshop",
+        "image":"photoshop.png"
+      },
+      {
+        "name":"Illustrator",
+        "level":"55%",
+        "image":"illustrator.png"
+      },
+      {
+        "name":"Traktor",
+        "image":"traktor.png"
+      },
+      {
+        "name":"C++",
+        "image":"cpp.png"
+      },
+      {
+        "name":"Python",
+        "image":"python.png"
+      }
+      
+      
+    ]
+  },
+  "portfolio":{
+    "projects": [ 
+      {
+        "title":"Triple E Professional Learning Network",
+        "category":"Website built in Angular during my senior year at Michigan as apart of a directed study with multiple professors",
+        "image":"tripleE.jpg",
+        "url":"http://tripleepln.org"
+      },
+      {
+        "title":"TD Ameritrdae Network Radio",
+        "category":"helped develop the TDAN Radio app, which allows iOS users to stream TDAN directly to their phone with full Apple Carplay functionality",
+        "image":"TDANRadio.jpg",
+        "url":"https://apps.apple.com/us/app/tdan-radio/id1460722200"
+      },
+      {
+        "title":"TD Ameritrdae Network Video",
+        "category":"helped develop the TDAN Video app, which allows iOS users to stream TDAN directly to their phone",
+        "image":"TDANVideo.jpg",
+        "url":"https://apps.apple.com/us/app/tda-network/id1460719185"
+      },
+      {
+        "title":"STUMPY",
+        "category":"Worked on TD Ameritrade's open source python library STUMPY, helping develop the algorithm through research & implementation.",
+        "image":"stumpy.png",
+        "url":"https://github.com/TDAmeritrade/stumpy"
+      } 
+    ]
+  },
+  "testimonials":{
+    "testimonials":[
+      {
+        "text":"Having Jake on the team is a very positive experience. He has a lot of energy and cares a lot about the quality of his work as well as a desire for his work to be meaningful.",
+        "user":"Chris Melnick, Manager of TD Ameritrade's Exploration Lab"
+      },
+      {
+        "text":"Jake has always been innovative. At the age 3 of he merged two quotes, \"No Problem\" and \"My Pleasure\", to become \"No Pleasure\".",
+        "user":"Lisa Myers, Mom"
+      }
+    ]
+  }
+}
