@@ -156,8 +156,10 @@ class Contact extends Component {
 
                         <div>
                            {/* <button onSubmit={this.handleSubmit} className="submit">Submit</button> */}
-                           <input type="submit" value="Submit" />
+                           
                            <div class="g-recaptcha" data-sitekey="6LfCXL8UAAAAAN17cfWjv6Z3iGEIJZXmQ_Xs1LsK"></div>
+                           <br />
+                           <input type="submit" value="Submit" />
                            <span id="image-loader">  
                               <img alt="" src="images/loader.gif" />
                            </span>
