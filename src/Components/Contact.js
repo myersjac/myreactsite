@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 
 import * as emailjs from 'emailjs-com';
 
+const gCaptcha = <div id="googlecaptcha1" className="g-recaptcha-class" class="g-recaptcha" data-sitekey="6LfCXL8UAAAAAN17cfWjv6Z3iGEIJZXmQ_Xs1LsK"></div>
+
 
 class Contact extends Component {
 
@@ -23,16 +25,22 @@ class Contact extends Component {
    handleChange(event, string) {
       switch (string) {
          case "name":
-            this.setState({ name: event.target.value });
+            this.setState({
+               name: event.target.value
+            });
             break;
          case "email":
-            this.setState({ email: event.target.value });
+            this.setState({
+               email: event.target.value
+            });
             break;
          case "subject":
-            this.setState({ subject: event.target.value });
+            this.setState({ 
+               subject: event.target.value });
             break;
          case "message":
-            this.setState({ message: event.target.value });
+            this.setState({ 
+               message: event.target.value });
             break;
          default: break;
 
@@ -41,18 +49,18 @@ class Contact extends Component {
 
    handleSubmit(event) {
 
-      
+
       event.preventDefault();
       console.log(this.state);
 
-       var goodtosend = ((this.state.email.length > 0) && (this.state.subject.length > 0) && (this.state.message.length > 0))
+      var goodtosend = ((this.state.email.length > 0) && (this.state.subject.length > 0) && (this.state.message.length > 0))
 
-       if(!goodtosend) {
+      if (!goodtosend) {
          alert("Please follow the requested email format!");
          return;
 
 
-       }
+      }
       const msg = {
          to: "jacobmyers922@gmail.com",
          from: this.state.email,
@@ -65,22 +73,22 @@ class Contact extends Component {
       // var template_id = "template_rtgo442n"; //contactme
       var template_id = "contactme"; //contactme
 
-      emailjs.send(service_id, template_id, msg, "user_jv6GwFGMxfrpuH2eoDCrH").then(function (response) {
+      emailjs.send(service_id, template_id, msg, "user_jv6GwFGMxfrpuH2eoDCrH").then((response) => {
          console.log('SUCCESS!', response.status, response.text);
+         console.log(response);
          alert("Email Sent!");
          document.getElementById("contactForm").reset();
+         this.setState({
+            name: '',
+            email: '',
+            subject: '',
+            message: ''
+         });
       }, function (error) {
          console.log('FAILED...', error);
-         alert("Email Not Sent! Looks to be an external problem.");
+         alert("Email Not Sent! Looks to be an external problem. Make sure you have filled out the Captcha, otherwise try to reload the page");
 
          return false;
-      });
-
-      this.setState({
-         name: '',
-         email: '',
-         subject: '',
-         message: ''
       });
 
       return false;
@@ -90,6 +98,7 @@ class Contact extends Component {
    render() {
 
       if (this.props.data) {
+         
          var name = this.props.data.name;
          var street = this.props.data.address.street;
          var city = this.props.data.address.city;
@@ -124,31 +133,31 @@ class Contact extends Component {
 
                   <form onSubmit={this.handleSubmit} id="contactForm" name="contactForm">
                      <fieldset>
-
                         <div>
+                           <input type='hidden' value='something'/>
                            <label htmlFor="contactName">Name <span className="required">*</span></label>
-                           <input pattern=".{3,}" value={this.state.value} type="text" defaultValue="" size="35" id="contactName" name="contactName" onChange={(e) => {
+                           <input pattern=".{3,}" value={this.state.name} type="text" size="35" id="contactName" name="contactName" onChange={(e) => {
                               this.handleChange(e, "name");
                            }} />
                         </div>
 
                         <div>
                            <label htmlFor="contactEmail">Email <span className="required">*</span></label>
-                           <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={this.state.value} type="email" defaultValue="" size="35" id="contactEmail" name="contactEmail" onChange={(e) => {
+                           <input pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" value={this.state.email} type="email"  size="35" id="contactEmail" name="contactEmail" onChange={(e) => {
                               this.handleChange(e, "email");
                            }} />
                         </div>
 
                         <div>
-                           <label htmlFor="contactSubject">Subject</label>
-                           <input pattern=".{3,}" value={this.state.value} type="text" defaultValue="" size="35" id="contactSubject" name="contactSubject" onChange={(e) => {
+                           <label htmlFor="contactSubject">Subject <span className="required">*</span></label>
+                           <input pattern=".{3,}" value={this.state.value} type="text" value={this.state.subject} size="35" id="contactSubject" name="contactSubject" onChange={(e) => {
                               this.handleChange(e, "subject");
                            }} />
                         </div>
 
                         <div>
                            <label htmlFor="contactMessage">Message <span className="required">*</span></label>
-                           <textarea pattern=".{3,}" value={this.state.value} cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={(e) => {
+                           <textarea pattern=".{3,}" value={this.state.message} cols="50" rows="15" id="contactMessage" name="contactMessage" onChange={(e) => {
                               this.handleChange(e, "message");
                            }}></textarea>
                         </div>
@@ -156,11 +165,15 @@ class Contact extends Component {
 
                         <div>
                            {/* <button onSubmit={this.handleSubmit} className="submit">Submit</button> */}
-                           
-                           <div class="g-recaptcha" data-sitekey="6LfCXL8UAAAAAN17cfWjv6Z3iGEIJZXmQ_Xs1LsK"></div>
+
+                           {/* <div className="g-recaptcha-class" class="g-recaptcha" data-sitekey="6LfCXL8UAAAAAN17cfWjv6Z3iGEIJZXmQ_Xs1LsK"></div> */}
+                           <div id="captcha-container" className="captcha-container">
+                              {gCaptcha}
+                           </div>
+
                            <br />
                            <input type="submit" value="Submit" />
-                           <span id="image-loader">  
+                           <span id="image-loader">
                               <img alt="" src="images/loader.gif" />
                            </span>
                         </div>
