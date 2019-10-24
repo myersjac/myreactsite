@@ -3,15 +3,15 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@sendgrid/mail": "^6.3.1",
+    "@sendgrid/mail": "^6.4.0",
     "emailjs": "^2.2.0",
-    "emailjs-com": "^2.3.2",
-    "gh-pages": "^2.0.1",
+    "emailjs-com": "^2.4.0",
+    "gh-pages": "^2.1.1",
     "jquery": "^3.4.1",
     "nodemailer": "^5.1.1",
-    "react": "^16.8.4",
-    "react-dom": "^16.8.4",
-    "react-ga": "^2.5.7",
+    "react": "^16.11.0",
+    "react-dom": "^16.11.0",
+    "react-ga": "^2.7.0",
     "react-scripts": "2.1.8",
     "scrollreveal": "^4.0.5"
   },
@@ -35,6 +35,6 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "react-alice-carousel": "^1.13.3"
+    "react-alice-carousel": "^1.15.3"
   }
 }
